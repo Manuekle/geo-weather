@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Check the weather data from all around the globe."
+    />
+    <meta
+      name="keywords"
+      content="weather forecast,weather,forecast,wind direction,climate,clouds,meteorology,precipitation"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="canonical" href="https://geoweather.davidhuertas.dev" /> -->
+    <meta name="robots" content="index, nofollow" />
+
+    <title>GeoWeather</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GeoWeather" />
+    <meta
+      property="og:description"
+      content="Check the weather data from all around the globe."
+    />
+    <!-- <meta
+      name="image"
+      property="og:image"
+      content="https://geoweather.davidhuertas.dev/banner.png"
+    /> -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+
+    <!-- <meta property="og:url" content="https://geoweather.davidhuertas.dev" /> -->
+    <meta property="og:site_name" content="GeoWeather" />
+    <meta name="author" content="Manuel Erazo" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GeoWeather" />
+    <meta
+      name="twitter:description"
+      content="Check the weather data from all around the globe."
+    />
+    <!-- <meta
+      name="twitter:image"
+      content="https://geoweather.davidhuertas.dev/banner.png"
+    /> -->
+    <meta name="twitter:image:alt" content="GeoWeather" />
+    <meta name="twitter:creator" content="@Manuekle" />
+    <script>
+      window.myCallbackFunc = function () {
+        window.initOne && window.initOne();
+      };
+    </script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9792weT6nDvmOoMjmagr7ybocOXLd6dU&language=en&components=locality&libraries=places&callback=myCallbackFunc"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

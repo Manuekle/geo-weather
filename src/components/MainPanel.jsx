@@ -81,9 +81,9 @@ export default function MainPanel() {
           {/* current day */}
           <div className="relative flex flex-col gap-12 justify-center items-center py-14">
             <span className="flex flex-col gap-2 xl:w-[32em] w-full">
-              <h1 className="text-justify text-[#333B53] font-bold text-xl tracking-wide xl:text-2xl bg-[#FCFCFC] rounded-3xl px-8 py-2 shadow-xl">
+              {/* <h1 className="text-justify text-[#333B53] font-bold text-xl tracking-wide xl:text-2xl bg-[#FCFCFC] rounded-3xl px-8 py-2 shadow-xl">
                 Current Day
-              </h1>
+              </h1> */}
               <CurrentDayCard />
             </span>
             {/* desktop */}
@@ -136,10 +136,9 @@ export default function MainPanel() {
           {/* forecast */}
           <div className="relative flex flex-col gap-12 justify-center items-center">
             <span className="flex flex-col gap-2 w-full">
-              <h1 className="text-justify text-[#333B53] font-bold text-xl tracking-wide xl:text-2xl bg-[#FCFCFC] rounded-3xl px-8 py-2 shadow-xl">
+              {/* <h1 className="text-justify text-[#333B53] font-bold text-xl tracking-wide xl:text-2xl bg-[#FCFCFC] rounded-3xl px-8 py-2 shadow-xl">
                 Forecast
-              </h1>
-              {/* <CurrentDayCard /> */}
+              </h1> */}
               <ForecastCards active={active} setActive={setActive} />
             </span>
             <span className="w-full flex justify-center">

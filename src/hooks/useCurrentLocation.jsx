@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 import { useEffect, useState } from 'react';
 
 const useCurrentLocation = (options = {}) => {

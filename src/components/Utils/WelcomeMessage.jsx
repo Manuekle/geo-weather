@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import sunImage from '../../img/Sunny.svg';
 
 export default function WelcomeMessage() {

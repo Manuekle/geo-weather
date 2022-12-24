@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "format": "prettier --write .",
+    "fix": "eslint .",
     "lint": "eslint --fix . --ext .js,.jsx",
     "host": "vite --host",
     "build": "vite build",

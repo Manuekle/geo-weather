@@ -1,3 +1,5 @@
+/* eslint-disable consistent-return */
+/* eslint-disable no-shadow */
 import { useEffect, useRef, useState } from 'react';
 
 const useWatchLocation = (options = {}) => {

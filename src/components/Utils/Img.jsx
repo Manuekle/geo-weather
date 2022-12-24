@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import useImage from '../../hooks/useImage';
 
 export default function Img({ className, src, alt, width, height }) {

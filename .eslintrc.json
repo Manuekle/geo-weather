@@ -20,6 +20,11 @@
   },
   "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
+    "react/jsx-uses-react": "off",
+    "prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "multiline-ternary": "off",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       1,

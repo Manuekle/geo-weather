@@ -1,3 +1,8 @@
+/* eslint-disable no-console */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-shadow */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/jsx-no-constructed-context-values */
 import { createContext, useReducer } from 'react';
 
 import { OPTIONS } from '../components/Const';
@@ -34,6 +39,7 @@ export default function WeatherContextProvider(props) {
         });
         const { location } = data;
         const { name, region, country } = location;
+        // console.log(data);
         dispatch({
           type: 'CHANGE_ADDRESS',
           payload: `${name}, ${region}, ${country}`
@@ -116,6 +122,7 @@ export default function WeatherContextProvider(props) {
             type: 'REFRESH_WEATHER',
             payload: data
           });
+          // console.log(data);
         });
     } catch (err) {
       console.log(err);

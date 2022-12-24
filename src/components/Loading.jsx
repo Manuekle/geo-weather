@@ -21,7 +21,9 @@ export default function Loading({ error }) {
           />
         </svg>
       ) : (
-        <p className="text-white">{error}</p>
+        <p className="text-text-[#333B53] font-bold text-sm tracking-wide capitalize">
+          {error}
+        </p>
       )}
     </div>
   );

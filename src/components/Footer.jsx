@@ -4,7 +4,7 @@ import Github from '../assets/Github';
 
 function Footer() {
   return (
-    <footer className="bg-[#E8F3D6] dark:bg-[#474E68] py-8 flex xl:flex-row flex-col gap-2 xl:justify-between justify-center items-center px-8">
+    <footer className="bg-[#FAF8F1] dark:bg-[#474E68] py-8 flex xl:flex-row flex-col gap-2 xl:justify-between justify-center items-center px-8">
       <span />
       <span className="flex flex-col gap-2 items-center text-sm tracking-wide">
         <h1 className="text-[#333B53] dark:text-[#F0E9D2] font-bold">

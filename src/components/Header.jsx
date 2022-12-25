@@ -45,12 +45,12 @@ function Header() {
       </div>
       <div className="xl:hidden block relative cursor-move">
         {/* mobile */}
-        <div className="fixed z-20 top-0 left-0 justify-end items-end right-0 flex py-3 px-4 flex-col gap-2 backdrop-blur-sm xl:backdrop-blur-none bg-black/30 xl:bg-transparent">
-          <List
+        <div className="fixed z-20 top-0 left-0 justify-end items-end right-0 flex py-3 px-4 flex-col gap-2">
+          {/* <List
             size={25}
             className="text-[#333B53] dark:text-[#F0E9D2]"
             weight="bold"
-          />
+          /> */}
           <motion.div layout whileTap={{ scale: 0.95 }} animate={{ scale: 1 }}>
             <button
               type="button"

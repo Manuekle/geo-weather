@@ -1,12 +1,16 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/react-in-jsx-scope */
+
+import Img from './Utils/Img';
+
 export default function Loading({ error }) {
+  const robot = 'Robot';
   return (
-    <div className="min-h-screen bg-[#F0E9D2] dark:bg-[#404258] grid place-content-center ">
+    <div className="min-h-screen bg-[#F1F6F5] grid place-content-center ">
       {!error ? (
         <svg
           role="status"
-          className="w-20 h-20 mr-2 text-[#404258] dark:text-gray-200 animate-spin fill-amber-400"
+          className="w-20 h-20 mr-2 text-zinc-300 animate-spin fill-[#333B53]"
           viewBox="0 0 100 101"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -21,9 +25,19 @@ export default function Loading({ error }) {
           />
         </svg>
       ) : (
-        <p className="text-[#333B53] dark:text-[#F0E9D2] font-bold text-sm tracking-wide capitalize">
-          {error}
-        </p>
+        <span className="w-full flex flex-col gap-1 justify-center items-center">
+          <Img src={robot} alt="robot" className="w-24 h-24 object-cover" />
+          <p className="text-[#333B53] dark:text-[#F0E9D2] font-bold text-sm tracking-wide capitalize">
+            {error}
+          </p>
+          <button
+            type="submit"
+            onClick={() => window.location.reload()}
+            className="border px-2 w-28 py-2 bg-[#333B53] rounded-2xl text-center text-[#F0E9D2] dark:text-[#F0E9D2] font-bold text-xs tracking-wide capitalize"
+          >
+            Reload
+          </button>
+        </span>
       )}
     </div>
   );

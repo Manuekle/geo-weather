@@ -12,7 +12,7 @@ export default function WindHumData({ src, data, text, title, newLine }) {
         width={25}
         height={24}
       />
-      <h3 className="text-sm text-[#333B53] font-bold tracking-wide">
+      <h3 className="text-sm text-[#333B53] dark:text-[#F0E9D2] font-bold tracking-wide">
         {title} {newLine && <br />}
         {data} {text}
       </h3>

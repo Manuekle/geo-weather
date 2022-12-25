@@ -21,7 +21,7 @@ export default function CurrentHourCard({ element }) {
   };
   return (
     <div className="flex flex-col gap-1 items-center">
-      <p className="text-[#333B53] font-bold text-xs">
+      <p className="text-[#333B53] dark:text-[#F0E9D2] font-bold text-xs">
         {degreeType === 'C' ? `${element.temp_c}ºC` : `${element.temp_f}ºF`}
       </p>
       <div className="grid place-content-center place-items-center h-full ">
@@ -40,11 +40,11 @@ export default function CurrentHourCard({ element }) {
           />
         </motion.div>
         <span className="flex flex-col gap-1 items-center">
-          <p className="text-[#333B53] font-bold text-xs">
+          <p className="text-[#333B53] dark:text-[#F0E9D2] font-bold text-xs">
             {/* {element.time.slice(11, 16)} */}
             {convertTime(time)}
           </p>
-          <p className="text-[#333B53] font-bold text-xs whitespace-pre-line text-center">
+          <p className="text-[#333B53] dark:text-[#F0E9D2] font-bold text-xs whitespace-pre-line text-center">
             {element.condition?.text}
           </p>
         </span>

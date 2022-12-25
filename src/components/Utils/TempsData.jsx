@@ -9,7 +9,7 @@ export default function TempsData({ temp, max }) {
   const { degreeType } = useContext(WeatherContext);
   return (
     <div className="flex items-center gap-3">
-      <h2 className="text-sm font-bold text-[#333B53] tracking-wide">
+      <h2 className="text-sm font-bold text-[#333B53] dark:text-[#F0E9D2] tracking-wide">
         {temp}º{degreeType}
       </h2>
       <div className="flex">

@@ -35,18 +35,18 @@ export default function ForecastDayCard({ active }) {
       className="delay-300 duration-700 transform opacity-0 transition-all translate-y-12 ease-out w-full flex justify-center"
       data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'
     >
-      <div className="flex flex-col gap-4 bg-[#FCFCFC] rounded-3xl p-8 shadow-xl w-full xl:w-[32em]">
+      <div className="flex flex-col gap-4 bg-[#FCFCFC] dark:bg-[#6B728E] rounded-3xl p-8 shadow-xl w-full xl:w-[32em]">
         <div className="flex justify-between items-center">
           <span className="flex flex-col gap-1">
-            <h3 className="text-3xl text-[#333B53] font-bold tracking-wide">
+            <h3 className="text-3xl text-[#333B53] dark:text-[#F0E9D2] font-bold tracking-wide">
               {DAY[new Date(day?.date).getDay()]}
             </h3>
-            <h2 className="text-xl xl:text-7xl font-bold text-[#333B53]">
+            <h2 className="text-xl xl:text-7xl font-bold text-[#333B53] dark:text-[#F0E9D2]">
               {degreeType === 'C'
                 ? `${day?.day?.avgtemp_c}°C`
                 : `${day?.day?.avgtemp_f}°F`}
             </h2>
-            <h1 className="font-bold text-black/30 text-sm xl:text-md capitalize tracking-wide">
+            <h1 className="font-bold text-black/30 dark:text-white/70 text-sm xl:text-md capitalize tracking-wide">
               {day?.day?.condition?.text}
             </h1>
           </span>
@@ -62,7 +62,7 @@ export default function ForecastDayCard({ active }) {
             alt="Weather"
             // width={90}
             // height={90}
-            className="w-20 xl:w-[100] h-20 xl:h-[100] object-contain"
+            className="w-20 xl:w-[100] h-20 xl:h-[100] object-cover"
           />
         </div>
         <span className="flex flex-col gap-1">

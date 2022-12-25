@@ -48,7 +48,7 @@ export default function MainPanel() {
   };
 
   return (
-    <div className="relative z-0 grid justify-center min-h-screen gap-3 p-8 bg-[#F6F6F6]">
+    <div className="relative z-0 grid justify-center min-h-screen pt-12 xl:pt-8 gap-3 p-8 bg-[#F0E9D2] dark:bg-[#404258]">
       {location ? (
         <div className="container min-w-5xl">
           <div
@@ -57,10 +57,10 @@ export default function MainPanel() {
           >
             <div className="w-full flex flex-col gap-3 xl:w-[32em] justify-center">
               <span className="flex flex-col gap-0 justify-start">
-                <h2 className="font-bold text-xl text-[#333B53]">
+                <h2 className="font-bold text-xl text-[#333B53] dark:text-[#F0E9D2]">
                   {convertTime(time) || ''}
                 </h2>
-                <h2 className="font-bold text-sm text-[#333B53]">
+                <h2 className="font-bold text-sm text-[#333B53] dark:text-[#F0E9D2]">
                   {date || ''}{' '}
                 </h2>
               </span>
@@ -72,7 +72,7 @@ export default function MainPanel() {
                   width={25}
                   height={25}
                 />
-                <h2 className="text-base font-bold text-[#333B53]">
+                <h2 className="text-base font-bold text-[#333B53] dark:text-[#F0E9D2]">
                   {address}
                 </h2>
               </div>
@@ -87,7 +87,7 @@ export default function MainPanel() {
               <CurrentDayCard />
             </span>
             {/* desktop */}
-            <div className="bg-[#FCFCFC] rounded-3xl py-4 px-0 shadow-xl w-full xl:w-[32em] hidden xl:block relative cursor-move">
+            <div className="bg-[#FCFCFC] dark:bg-[#6B728E] rounded-3xl py-4 px-0 shadow-xl w-full xl:w-[32em] hidden xl:block relative cursor-move">
               <Splide
                 options={{
                   perPage: 3,
@@ -110,14 +110,14 @@ export default function MainPanel() {
               </Splide>
             </div>
             {/* mobile */}
-            <div className="bg-[#FCFCFC] rounded-3xl py-4 px-8 shadow-xl w-80 xl:hidden block relative cursor-move">
+            <div className="bg-[#FCFCFC] dark:bg-[#6B728E] rounded-3xl py-4 px-8 shadow-xl w-80 xl:hidden block relative cursor-move">
               <Splide
                 options={{
-                  perPage: 1,
+                  perPage: 2,
                   arrows: false,
                   pagination: false,
                   drag: true,
-                  focus: 'center',
+                  focus: 'left',
                   perMove: 1,
                   gap: '2px',
                   autoScroll: {
@@ -145,7 +145,7 @@ export default function MainPanel() {
               <ForecastDayCard active={active} />
             </span>
             {/* mobile */}
-            <div className="bg-[#FCFCFC] rounded-3xl py-4 px-0 shadow-xl w-full xl:w-[32em] hidden xl:block relative cursor-move">
+            <div className="bg-[#FCFCFC] dark:bg-[#6B728E] rounded-3xl py-4 px-0 shadow-xl w-full xl:w-[32em] hidden xl:block relative cursor-move">
               <Splide
                 options={{
                   perPage: 3,
@@ -168,14 +168,14 @@ export default function MainPanel() {
               </Splide>
             </div>
             {/* desktop */}
-            <div className="bg-[#FCFCFC] rounded-3xl py-4 px-8 shadow-xl w-80 xl:hidden block relative cursor-move">
+            <div className="bg-[#FCFCFC] dark:bg-[#6B728E] rounded-3xl py-4 px-8 shadow-xl w-80 xl:hidden block relative cursor-move">
               <Splide
                 options={{
-                  perPage: 1,
+                  perPage: 2,
                   arrows: false,
                   pagination: false,
                   drag: true,
-                  focus: 'center',
+                  focus: 'left',
                   perMove: 1,
                   gap: '2px',
                   autoScroll: {

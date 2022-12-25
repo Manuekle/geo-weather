@@ -23,16 +23,18 @@ export default function ForecastCards({ active, setActive }) {
         <motion.div layout whileTap={{ scale: 0.95 }} animate={{ scale: 1 }}>
           <div
             key={day.date_epoch}
-            className={`border-2 bg-[#FCFCFC] hover:bg-gray-100 rounded-3xl py-8 px-8 shadow-xl h-44 w-full grid grid-cols-4 grid-rows-2 justify-center items-center p-6 cursor-pointer ${
-              active === index ? 'border-gray-200' : 'border-none'
+            className={`border-2 bg-[#FCFCFC] dark:bg-[#6B728E] hover:bg-gray-100 dark:hover:bg-[#6B728E]/80 rounded-3xl py-8 px-8 shadow-xl h-44 w-full grid grid-cols-4 grid-rows-2 justify-center items-center p-6 cursor-pointer ${
+              active === index
+                ? 'border-gray-200 dark:border-gray-600'
+                : 'border-none'
             }`}
             onClick={() => setActive(index)}
           >
             <div className="col-span-2">
-              <h3 className="text-xl text-[#333B53] font-bold tracking-wide">
+              <h3 className="text-xl text-[#333B53] dark:text-[#F0E9D2] font-bold tracking-wide">
                 {DAY[new Date(day.date).getDay()]}
               </h3>
-              <h3 className="font-bold text-black/30 text-sm capitalize tracking-wide">
+              <h3 className="font-bold text-black/30 dark:text-white/70 text-sm capitalize tracking-wide">
                 {day.day.condition.text}
               </h3>
             </div>

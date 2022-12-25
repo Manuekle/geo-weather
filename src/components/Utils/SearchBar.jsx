@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/react-in-jsx-scope */
-import { useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 
 import PlacesAutocomplete from 'react-places-autocomplete/dist/PlacesAutocomplete';
 import { MagnifyingGlass } from 'phosphor-react';

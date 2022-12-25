@@ -48,7 +48,7 @@ export default function MainPanel() {
   };
 
   return (
-    <div className="relative z-0 grid justify-center min-h-screen pt-12 xl:pt-8 gap-3 p-8 bg-[#F0E9D2] dark:bg-[#404258]">
+    <div className="relative z-0 grid justify-center min-h-screen pt-[5em] xl:pt-8 gap-3 p-8 bg-[#F0E9D2] dark:bg-[#404258]">
       {location ? (
         <div className="container min-w-5xl">
           <div

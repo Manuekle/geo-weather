@@ -2,11 +2,11 @@
 /* eslint-disable react/react-in-jsx-scope */
 export default function Loading({ error }) {
   return (
-    <div className="min-h-screen bg-[#F6F6F6] grid place-content-center ">
+    <div className="min-h-screen bg-[#F0E9D2] dark:bg-[#404258] grid place-content-center ">
       {!error ? (
         <svg
           role="status"
-          className="w-20 h-20 mr-2 text-gray-200 animate-spin fill-yellow-400"
+          className="w-20 h-20 mr-2 text-[#404258] dark:text-gray-200 animate-spin fill-amber-400"
           viewBox="0 0 100 101"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ export default function Loading({ error }) {
           />
         </svg>
       ) : (
-        <p className="text-text-[#333B53] font-bold text-sm tracking-wide capitalize">
+        <p className="text-[#333B53] dark:text-[#F0E9D2] font-bold text-sm tracking-wide capitalize">
           {error}
         </p>
       )}

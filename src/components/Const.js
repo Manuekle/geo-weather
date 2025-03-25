@@ -25,8 +25,8 @@ export const DAY = {
 export const OPTIONS = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com',
-    'X-RapidAPI-Key': '2c9def7ff9msh9694b4a32b1be6cp146ff6jsnd33a36f39afd'
+		'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com',
+    'x-rapidapi-key': '67e1f64a28msh22ef0b8a81afa21p14b08fjsnbe031b2b6003'
   }
 };
 export const WEATHER_CODES = {
